@@ -1,0 +1,11 @@
+loadCss("stylesheets/arbitrary.css");
+
+el = document.getElementById("divy");
+el.innerHTML = "<%= @interior_fragment %>";
+
+require(["javascripts/arbitrary.js"],
+ function(module) {
+     console.log("Dependency loaded");
+     something();
+ }
+)

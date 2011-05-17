@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Streamer</title>
+  <%#= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "require" %>
+  <script>
+    // require(["javascripts/text"], function(val){
+    //     console.log("wtf");
+    // });
+    function loadCss(url) {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = url;
+        document.getElementsByTagName("head")[0].appendChild(link);
+    }
+  </script>
+  <%#= csrf_meta_tag %>
+</head>
+<body>
+
+<div id="divy">
+</div>
+<!-- <%#= yield %>
+
+</body>
+</html> -->

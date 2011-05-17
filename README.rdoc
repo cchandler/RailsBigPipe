@@ -1,0 +1,17 @@
+= BigPipe inspired experiment
+
+This is a Rails 3.0.7 project with me experimenting with implementing a BigPipe like workflow on the render path.
+
+{Facebook's BigPipe}[link:http://www.facebook.com/notes/facebook-engineering/bigpipe-pipelining-web-pages-for-high-performance/389414033919]
+
+= My goals
+
+I wanted to see what it would take with the current Rack-based Ruby server implementations to preemptively flush the socket and get the browser to start rendering content before the response was fully-buffered.  So far it appears to work well if I start Rails with rackup.  A good chunk of the ruby servers today buffer the response making it impossible to control within Rails.  It looks like a lot of this is being solved in Rails 3.1.
+
+== Meta
+
+Written by Chris Chandler(http://chrischandler.name) of Flatterline(http://flatterline.com)
+
+Released under the MIT License: http://www.opensource.org/licenses/mit-license.php
+
+Main page: http://github.com/cchandler/
