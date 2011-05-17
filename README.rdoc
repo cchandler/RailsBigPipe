@@ -2,7 +2,7 @@
 
 This is a Rails 3.0.7 project with me experimenting with implementing a BigPipe like workflow on the render path.
 
-{Facebook's BigPipe}[link:http://www.facebook.com/notes/facebook-engineering/bigpipe-pipelining-web-pages-for-high-performance/389414033919]
+{Facebook's BigPipe}[http://www.facebook.com/notes/facebook-engineering/bigpipe-pipelining-web-pages-for-high-performance/389414033919]
 
 = My goals
 
